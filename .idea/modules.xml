@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/g1brain-resource.iml" filepath="$PROJECT_DIR$/g1brain-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/resource/resource.iml" filepath="$PROJECT_DIR$/service/resource/resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-api/resource-api/resource-api.iml" filepath="$PROJECT_DIR$/service-api/resource-api/resource-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-api/service-api.iml" filepath="$PROJECT_DIR$/service-api/service-api.iml" />
+    </modules>
+  </component>
+</project>

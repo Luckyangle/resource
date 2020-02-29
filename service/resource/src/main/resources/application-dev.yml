@@ -1,0 +1,31 @@
+#服务器端口
+server:
+  port: 8200
+
+#数据源配置
+#spring:
+#  datasource:
+#    url: ${blade.datasource.dev.url}
+#    username: ${blade.datasource.dev.username}
+#    password: ${blade.datasource.dev.password}
+
+spring:
+  #排除DruidDataSourceAutoConfigure
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+  datasource:
+    dynamic:
+      #设置默认的数据源或者数据源组,默认值即为master
+      primary: master
+      datasource:
+        master:
+          url: jdbc:mysql://127.0.0.1:3306/g1brain_file?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&&rewriteBatchedStatements=true&&serverTimezone=GMT%2B8
+          username: root
+          password: 12345
+#          url: ${blade.datasource.resource.master.url}
+#          username: ${blade.datasource.resource.master.username}
+#          password: ${blade.datasource.resource.master.password}
+#        slave:
+#          url: ${blade.datasource.resource.slave.url}
+#          username: ${blade.datasource.resource.slave.username}
+#          password: ${blade.datasource.resource.slave.password}
